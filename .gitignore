@@ -10,6 +10,13 @@ env/
 # Tooling & OS
 .DS_Store
 .aider*
+*.swp
+*~
+*.un~
+
+# Jupyter / editor local state
+.ipynb_checkpoints/
+.vscode/
 
 # Ignore local personal knowledge data syncs
 .obsidian_staging/
