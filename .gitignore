@@ -10,3 +10,9 @@ env/
 # Tooling & OS
 .DS_Store
 .aider*
+
+# Ignore local personal knowledge data syncs
+.obsidian_staging/
+
+# Ignore keys if any
+.env
