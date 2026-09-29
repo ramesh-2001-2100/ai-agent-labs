@@ -5,3 +5,20 @@ matplotlib
 openai
 python-dotenv
 flask
+
+# AI Agents (ai_agents/)
+torch
+transformers
+anthropic
+
+# LangChain & RAG (learning/kodekloud/, notebooks)
+langchain
+langchain-core
+langchain-community
+langchain-openai
+langchain-text-splitters
+faiss-cpu
+
+# Notebook utilities (learning/educative/)
+tiktoken
+setuptools
