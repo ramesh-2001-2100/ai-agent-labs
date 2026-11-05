@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technology Evolution • From Stone to AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+    
+    :root {
+      --font-sans: 'Inter', system_ui, sans-serif;
+    }
+    
+    body {
+      font-family: 'Inter', system_ui, -apple-system, sans-serif;
+    }
+    
+    .title-font {
+      font-family: 'Space Grotesk', 'Inter', system_ui, sans-serif;
+      font-feature-settings: "ss02";
+    }
+
+    .stage {
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .stage:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    }
+
+    .arrow {
+      transition: all 0.2s ease;
+    }
+    
+    .stage:hover + .arrow {
+      transform: translateY(4px);
+    }
+
+    .tech-gradient {
+      background: linear-gradient(180deg, #1a1a2e 0%, #0f0f1a 100%);
+    }
+
+    .label {
+      font-feature-settings: "tnum";
+    }
+
+    .era {
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+    }
+
+    .node {
+      box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.3),
+                  0 4px 6px -4px rgb(0 0 0 / 0.3);
+    }
+  </style>
+</head>
+<body class="bg-zinc-950 text-white">
+  <div class="max-w-2xl mx-auto px-6 py-12">
+    <!-- Header -->
+    <div class="flex items-center gap-x-3 mb-3">
+      <div class="w-9 h-9 rounded-2xl bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center">
+        <i class="fa-solid fa-infinity text-white text-xl"></i>
+      </div>
+      <div>
+        <h1 class="title-font text-4xl font-semibold tracking-tighter">Technology Evolution</h1>
+        <p class="text-zinc-400 text-[15px] mt-0.5">From stone to silicon</p>
+      </div>
+    </div>
+
+    <div class="h-px bg-white/10 my-8"></div>
+
+    <!-- Diagram -->
+    <div class="space-y-1">
+      
+      <!-- Stage 1: Stone Tools -->
+      <div class="stage group flex items-center gap-5 rounded-3xl bg-zinc-900 border border-white/10 px-7 py-5 node">
+        <div class="flex-shrink-0 w-14 h-14 rounded-2xl bg-amber-950/60 border border-amber-900/60 flex items-center justify-center text-3xl">
+          🪨
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="flex items-baseline gap-x-3">
+            <div class="text-xl font-semibold tracking-tight">Stone Tools</div>
+            <div class="era text-amber-400/70 font-medium">~3.3 MYA</div>
+          </div>
+          <div class="text-sm text-zinc-400 mt-0.5">First deliberate toolmaking • Paleolithic</div>
+        </div>
+      </div>
+
+      <!-- Arrow -->
+      <div class="flex justify-center py-1">
+        <div class="arrow w-px h-7 bg-gradient-to-b from-white/30 to-white/10"></div>
+      </div>
+
+      <!-- Stage 2: Metal Tools -->
+      <div class="stage group flex items-center gap-5 rounded-3xl bg-zinc-900 border border-white/10 px-7 py-5 node">
+        <div class="flex-shrink-0 w-14 h-14 rounded-2xl bg-orange-950/60 border border-orange-900/60 flex items-center justify-center text-3xl">
+          ⚒️
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="flex items-baseline gap-x-3">
+            <div class="text-xl font-semibold tracking-tight">Metal Tools</div>
+            <div class="era text-orange-400/70 font-medium">~7,000 BCE</div>
+          </div>
+          <div class="text-sm text-zinc-400 mt-0.5">Copper • Bronze • Iron • Industrial capability</div>
+        </div>
+      </div>
+
+      <!-- Arrow -->
+      <div class="flex justify-center py-1">
+        <div class="arrow w-px h-7 bg-gradient-to-b from-white/30 to-white/10"></div>
+      </div>
+
+      <!-- Stage 3: Science -->
+      <div class="stage group flex items-center gap-5 rounded-3xl bg-zinc-900 border border-white/10 px-7 py-5 node">
+        <div class="flex-shrink-0 w-14 h-14 rounded-2xl bg-sky-950/60 border border-sky-900/60 flex items-center justify-center text-3xl">
+          🔬
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="flex items-baseline gap-x-3">
+            <div class="text-xl font-semibold tracking-tight">Science</div>
+            <div class="era text-sky-400/70 font-medium">1543 – 1800s</div>
+          </div>
+          <div class="text-sm text-zinc-400 mt-0.5">Empirical method • Experimentation • Enlightenment</div>
+        </div>
+      </div>
+
+      <!-- Arrow -->
+      <div class="flex justify-center py-1">
+        <div class="arrow w-px h-7 bg-gradient-to-b from-white/30 to-white/10"></div>
+      </div>
+
+      <!-- Stage 4: Computers -->
+      <div class="stage group flex items-center gap-5 rounded-3xl bg-zinc-900 border border-white/10 px-7 py-5 node">
+        <div class="flex-shrink-0 w-14 h-14 rounded-2xl bg-emerald-950/60 border border-emerald-900/60 flex items-center justify-center text-3xl">
+          💻
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="flex items-baseline gap-x-3">
+            <div class="text-xl font-semibold tracking-tight">Computers</div>
+            <div class="era text-emerald-400/70 font-medium">1940s – 1980s</div>
+          </div>
+          <div class="text-sm text-zinc-400 mt-0.5">Electronic computation • Stored programs • Personal computing</div>
+        </div>
+      </div>
+
+      <!-- Arrow -->
+      <div class="flex justify-center py-1">
+        <div class="arrow w-px h-7 bg-gradient-to-b from-white/30 to-white/10"></div>
+      </div>
+
+      <!-- Stage 5: Internet -->
+      <div class="stage group flex items-center gap-5 rounded-3xl bg-zinc-900 border border-white/10 px-7 py-5 node">
+        <div class="flex-shrink-0 w-14 h-14 rounded-2xl bg-cyan-950/60 border border-cyan-900/60 flex items-center justify-center text-3xl">
+          🌐
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="flex items-baseline gap-x-3">
+            <div class="text-xl font-semibold tracking-tight">Internet</div>
+            <div class="era text-cyan-400/70 font-medium">1969 – 2000s</div>
+          </div>
+          <div class="text-sm text-zinc-400 mt-0.5">Global network • Packet switching • World Wide Web</div>
+        </div>
+      </div>
+
+      <!-- Arrow -->
+      <div class="flex justify-center py-1">
+        <div class="arrow w-px h-7 bg-gradient-to-b from-white/30 to-white/10"></div>
+      </div>
+
+      <!-- Stage 6: Smartphones -->
+      <div class="stage group flex items-center gap-5 rounded-3xl bg-zinc-900 border border-white/10 px-7 py-5 node">
+        <div class="flex-shrink-0 w-14 h-14 rounded-2xl bg-lime-950/60 border border-lime-900/60 flex items-center justify-center text-3xl">
+          📱
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="flex items-baseline gap-x-3">
+            <div class="text-xl font-semibold tracking-tight">Smartphones</div>
+            <div class="era text-lime-400/70 font-medium">2007 – 2010s</div>
+          </div>
+          <div class="text-sm text-zinc-400 mt-0.5">Mobile internet • Touch interfaces • Always-connected</div>
+        </div>
+      </div>
+
+      <!-- Arrow -->
+      <div class="flex justify-center py-1">
+        <div class="arrow w-px h-7 bg-gradient-to-b from-white/30 to-white/10"></div>
+      </div>
+
+      <!-- Stage 7: AI -->
+      <div class="stage group flex items-center gap-5 rounded-3xl bg-gradient-to-r from-violet-950/80 to-fuchsia-950/50 border border-violet-500/30 px-7 py-6 node relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(#4f46e520_0.5px,transparent_1px)] bg-[length:4px_4px]"></div>
+        
+        <div class="flex-shrink-0 w-14 h-14 rounded-2xl bg-violet-500/10 border border-violet-400/40 flex items-center justify-center text-3xl relative z-10">
+          🤖
+        </div>
+        <div class="flex-1 min-w-0 relative z-10">
+          <div class="flex items-baseline gap-x-3">
+            <div class="text-xl font-semibold tracking-tight text-white">AI</div>
+            <div class="era text-violet-400/80 font-medium">2012 – present</div>
+          </div>
+          <div class="text-sm text-zinc-300 mt-0.5">Machine learning • Large models • General intelligence</div>
+        </div>
+        
+        <div class="text-xs px-3 py-1 rounded-full bg-white/10 text-white/60 font-medium tracking-widest relative z-10">NOW</div>
+      </div>
+    </div>
+
+    <div class="mt-8 text-center">
+      <p class="text-[13px] text-zinc-500">Each stage is a new layer of abstraction and leverage.</p>
+    </div>
+  </div>
+
+  <script>
+    // Simple tailwind script
+    function initializeTailwind() {
+      document.documentElement.style.setProperty('--accent', '#a78bfa');
+    }
+    window.onload = initializeTailwind;
+  </script>
+</body>
+</html>

@@ -1,9 +1,12 @@
 # lesson_01c_temperature.py — system prompt = poem; compare low vs high temperature
+#
+# Preconditions: valid OPENAI_API_KEY (see comments at top of lesson_01_first_call.py).
+#
 import os
 from openai import OpenAI
-from dotenv import load_dotenv
+from dotenv import find_dotenv, load_dotenv
 
-load_dotenv()  # Load API key from .env file
+load_dotenv(find_dotenv(usecwd=True), override=True)
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
